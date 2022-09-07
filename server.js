@@ -15,7 +15,7 @@ app.get('/square', validate, (req, res) => {
     const vNum = req.isNum;
     const squareN = vNum * vNum;
 
-    res.status(200).send(`{ num : ${squareN} }`);
+    res.status(200).send({ num: squareN });
 
 });
 
